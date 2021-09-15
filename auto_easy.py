@@ -1,10 +1,5 @@
 #!/usr/bin/env python3
 
-""" this is a program/script for automate testing and debuging purpose for easy learning process testing piece of code
- by running this scipt open and asking what to create c/cc/python and and ready to create a file and open vim and just ready to code 
- less friction = more quality work 
-"""
-
 import os
 import time
 
@@ -13,19 +8,19 @@ def create_c():
     i = os.chdir("/Users/sayantandas/fun/automation/test/")
     file_name = time.strftime("%Y-%m-%d-%H-%M-%S.c")
     with open((file_name), 'w+') as f:
-        f.write('created a new c file!')
+        f.write('//created a new c file!')
 
 def create_cc():
     i = os.chdir("/Users/sayantandas/fun/automation/test/")
     file_name = time.strftime("%Y-%m-%d-%H-%M-%S.cc")
     with open(file_name, 'w+') as f:
-        f.write('created a new cc file!')
+        f.write('//created a new cc file!')
   
 def create_py():
     i = os.chdir("/Users/sayantandas/fun/automation/test/")
     file_name = time.strftime("%Y-%m-%d-%H-%M-%S.py")
     with open(file_name, 'w+') as f:
-        f.write('created a new py file!')
+        f.write('#created a new py file!')
 
 def default():
     return "Please choose correct input 1 for c, 2 for c++, 3 for python"
