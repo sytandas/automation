@@ -1,8 +1,9 @@
-#!/usr/bin/env bash
+#/usr/bin/env bash
 
 ./proto.py
 
 while [ ! -f /Users/sayantandas/fun/automation/track_debugger.csv ]
 do
-  touch track_debugger.csv
+    touch track_debugger.csv
+    echo "csv created"
 done
