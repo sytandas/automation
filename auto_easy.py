@@ -3,7 +3,6 @@
 import os
 import time
 
-
 def create_c():
     i = os.chdir("/Users/sayantandas/fun/automation/test/")
     file_name = time.strftime("%Y-%m-%d-%H-%M-%S.c")
